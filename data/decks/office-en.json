@@ -1,0 +1,20 @@
+{
+  "id": "office-en",
+  "title": { "ru": "Офис EN", "en": "Office EN" },
+  "language": "en",
+  "description": { "ru": "Офисные шутки без токсичности", "en": "Office fun without toxicity" },
+  "blackCards": [
+    { "id": "ben3", "text": "The meeting finally worked because of ____. ", "pick": 1, "draw": 0 },
+    { "id": "ben4", "text": "Our team motto should be ____. ", "pick": 1, "draw": 0 }
+  ],
+  "whiteCards": [
+    { "id": "wen9", "text": "a color-coded calendar" },
+    { "id": "wen10", "text": "an accidental genius idea" },
+    { "id": "wen11", "text": "a heroic mute button" },
+    { "id": "wen12", "text": "a shared snack stash" },
+    { "id": "wen13", "text": "a motivational wallpaper" },
+    { "id": "wen14", "text": "a keyboard shortcut ritual" },
+    { "id": "wen15", "text": "a post-lunch reboot" },
+    { "id": "wen16", "text": "a very brave TODO list" }
+  ]
+}

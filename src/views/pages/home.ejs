@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="<%= locale %>">
+<%- include('../partials/head') %>
+<body>
+<%- include('../partials/header') %>
+<main class="container stack-lg">
+  <section class="card hero">
+    <h1><%= t('hero.title') %></h1>
+    <p><%= t('hero.subtitle') %></p>
+    <div class="actions">
+      <% if (currentUser) { %>
+        <a class="btn" href="/queue?lang=<%= locale %>"><%= t('cta.findGame') %></a>
+        <a class="btn ghost" href="/lobby/<%= currentUser.id %>?lang=<%= locale %>"><%= t('cta.myLobby') %></a>
+        <a class="btn ghost" href="/profile?lang=<%= locale %>"><%= t('cta.profile') %></a>
+      <% } else { %>
+        <a class="btn" href="/login?lang=<%= locale %>"><%= t('cta.loginToPlay') %></a>
+        <a class="btn ghost" href="/register?lang=<%= locale %>"><%= t('nav.register') %></a>
+      <% } %>
+    </div>
+  </section>
+
+  <section class="stats-grid">
+    <article class="card stat"><span><%= t('stats.registered') %></span><strong><%= stats.registeredUsersCount %></strong></article>
+    <article class="card stat"><span><%= t('stats.online') %></span><strong><%= stats.onlineUsersCount %></strong></article>
+    <article class="card stat"><span><%= t('stats.activeGames') %></span><strong><%= stats.activeGamesCount %></strong></article>
+  </section>
+
+  <section class="card">
+    <h2><%= t('news.latest') %></h2>
+    <% if (!news.length) { %><p class="muted"><%= t('common.empty') %></p><% } %>
+    <div class="news-grid">
+      <% news.forEach(function(n){ %>
+      <article class="news-item"><h3><a href="/news/<%= n.slug %>?lang=<%= locale %>"><%= n.title %></a></h3><p><%= n.excerpt %></p></article>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><%= t('chat.title') %></h2>
+    <p id="chatHint" class="muted"><%= currentUser ? '' : t('chat.readonly') %></p>
+    <div id="chatList" class="chat-box"></div>
+    <div class="chat-input-row">
+      <input id="chatInput" placeholder="<%= t('chat.placeholder') %>" <%= currentUser ? '' : 'disabled' %> />
+      <button id="chatSend" class="btn" <%= currentUser ? '' : 'disabled' %>><%= t('chat.send') %></button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><%= t('home.howTitle') %></h2>
+    <ul><li><%= t('home.how1') %></li><li><%= t('home.how2') %></li><li><%= t('home.how3') %></li></ul>
+  </section>
+</main>
+<%- include('../partials/footer') %>
+<%- include('../partials/scripts') %>
+</body>
+</html>

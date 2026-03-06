@@ -1,0 +1,5 @@
+<!doctype html><html lang="<%= locale %>"><%- include('../partials/head') %><body><%- include('../partials/header') %>
+<main class="container stack-lg"><section class="card"><h1><%= t('news.all') %></h1>
+<% if (!news.length) { %><p class="muted"><%= t('common.empty') %></p><% } %>
+<% news.forEach(function(n){ %><article class="news-row"><h2><a href="/news/<%= n.slug %>?lang=<%= locale %>"><%= n.title %></a></h2><p><%= n.excerpt %></p></article><% }) %>
+</section></main><%- include('../partials/footer') %><%- include('../partials/scripts') %></body></html>
