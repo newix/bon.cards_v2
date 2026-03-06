@@ -1,0 +1,5 @@
+<!doctype html><html><body><%- include('../partials/header') %><main>
+<h2><%= t('auth.login') %> / <%= t('auth.register') %></h2>
+<form id="login"><input name="username"/><input type="password" name="password"/><button>Login</button></form>
+<form id="register"><input name="username"/><input type="password" name="password"/><select name="language"><option>ru</option><option>en</option></select><button>Register</button></form>
+</main><%- include('../partials/footer') %><script src="/public/js/auth.js"></script></body></html>

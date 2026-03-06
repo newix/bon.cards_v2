@@ -1,0 +1,15 @@
+{
+  "appName": "SnarkCards",
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.how": "How to play",
+  "nav.rules": "Rules",
+  "nav.news": "News",
+  "nav.faq": "FAQ",
+  "home.hero": "Original party card game",
+  "home.findGame": "Find game",
+  "home.joinById": "Join by ID",
+  "auth.login": "Login",
+  "auth.register": "Register",
+  "chat.placeholder": "Type message"
+}

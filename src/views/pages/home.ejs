@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"/><title>SnarkCards</title><link rel="stylesheet" href="/public/css/main.css"/></head><body>
+<%- include('../partials/header') %>
+<main>
+  <h2><%= t('home.hero') %></h2>
+  <div class="stats">Users: <%= stats.registeredUsersCount %> | Online: <%= stats.onlineUsersCount %> | Active games: <%= stats.activeGamesCount %></div>
+  <a class="btn" href="/queue"><%= t('home.findGame') %></a>
+  <section><h3>News</h3><% news.forEach(n=> { %><article><a href="/news/<%= n.slug %>?lang=<%= locale %>"><%= n.title %></a></article><% }) %></section>
+  <section><h3>Global chat</h3><div id="chat"></div><input id="msg" placeholder="<%= t('chat.placeholder') %>"/><button id="send">Send</button></section>
+</main>
+<%- include('../partials/footer') %>
+<script>window.__AUTH__=<%- JSON.stringify(!!currentUser) %>;window.__USER__=<%- JSON.stringify(currentUser?.username||'guest') %></script>
+<script src="/public/js/chat.js"></script>
+</body></html>

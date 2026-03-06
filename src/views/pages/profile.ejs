@@ -1,0 +1,1 @@
+<!doctype html><html><body><%- include('../partials/header') %><main><h2>Profile</h2><p>playerId: <%= user.playerId %></p><p>Lobby: /lobby/<%= user.id %></p><pre><%= JSON.stringify(user.stats,null,2) %></pre></main><%- include('../partials/footer') %></body></html>

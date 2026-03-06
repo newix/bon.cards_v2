@@ -1,0 +1,12 @@
+{
+  "id": "n-en-1",
+  "slug": "snarkcards-mvp-launch",
+  "title": "SnarkCards MVP launch",
+  "excerpt": "First playable version is online.",
+  "content": "Queue, friend-lobby, chat, and localization are available.",
+  "language": "en",
+  "publishedAt": "2026-03-01T10:00:00.000Z",
+  "isPublished": true,
+  "tags": ["release", "mvp"],
+  "coverImage": "/public/img/news1.jpg"
+}

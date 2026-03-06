@@ -1,0 +1,15 @@
+{
+  "appName": "SnarkCards",
+  "nav.home": "Главная",
+  "nav.about": "О проекте",
+  "nav.how": "Как играть",
+  "nav.rules": "Правила",
+  "nav.news": "Новости",
+  "nav.faq": "FAQ",
+  "home.hero": "Оригинальная party-card игра",
+  "home.findGame": "Найти игру",
+  "home.joinById": "Присоединиться по ID",
+  "auth.login": "Вход",
+  "auth.register": "Регистрация",
+  "chat.placeholder": "Введите сообщение"
+}

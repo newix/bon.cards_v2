@@ -1,0 +1,12 @@
+{
+  "id": "n-ru-2",
+  "slug": "guest-judge-bot-update",
+  "title": "Добавлен гостевой ведущий-бот",
+  "excerpt": "Теперь раунды не зависают.",
+  "content": "Если ведущий молчит, бот выбирает победителя автоматически.",
+  "language": "ru",
+  "publishedAt": "2026-03-03T10:00:00.000Z",
+  "isPublished": true,
+  "tags": ["feature"],
+  "coverImage": "/public/img/news2.jpg"
+}

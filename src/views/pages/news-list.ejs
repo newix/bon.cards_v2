@@ -1,0 +1,1 @@
+<!doctype html><html><body><%- include('../partials/header') %><main><h2>News</h2><% news.forEach(n=> { %><article><a href="/news/<%= n.slug %>?lang=<%= locale %>"><%= n.title %></a><p><%= n.excerpt %></p></article><% }) %></main><%- include('../partials/footer') %></body></html>
