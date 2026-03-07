@@ -1,0 +1,9 @@
+<!doctype html><html lang="<%= locale %>"><%- include('../partials/head') %><body><%- include('../partials/header') %>
+<main class="container stack-lg"><section class="card">
+<nav class="breadcrumb"><a href="/news?lang=<%= locale %>"><%= t('news.back') %></a> / <span><%= item.title %></span></nav>
+<h1><%= item.title %></h1><p class="muted"><%= new Date(item.publishedAt).toLocaleDateString(locale) %></p>
+<div class="cover-placeholder">cover</div>
+<div class="article-body"><p><%= item.content %></p></div></section>
+<section class="card"><h2><%= t('news.related') %></h2>
+<% related.forEach(function(n){ %><p><a href="/news/<%= n.slug %>?lang=<%= locale %>"><%= n.title %></a></p><% }) %>
+</section></main><%- include('../partials/footer') %><%- include('../partials/scripts') %></body></html>

@@ -1,0 +1,20 @@
+{
+  "id": "base-en",
+  "title": { "ru": "База EN", "en": "Base EN" },
+  "language": "en",
+  "description": { "ru": "Стартовая английская колода", "en": "Starter english deck" },
+  "blackCards": [
+    { "id": "ben1", "text": "What powers my focus today?", "pick": 1, "draw": 0 },
+    { "id": "ben2", "text": "My instant confidence booster is ____. ", "pick": 1, "draw": 0 }
+  ],
+  "whiteCards": [
+    { "id": "wen1", "text": "a dramatic playlist" },
+    { "id": "wen2", "text": "a sticky note manifesto" },
+    { "id": "wen3", "text": "a surprise coffee" },
+    { "id": "wen4", "text": "a calm breathing loop" },
+    { "id": "wen5", "text": "a tiny lucky charm" },
+    { "id": "wen6", "text": "an optimistic spreadsheet" },
+    { "id": "wen7", "text": "a five-minute dance break" },
+    { "id": "wen8", "text": "a notebook full of ideas" }
+  ]
+}

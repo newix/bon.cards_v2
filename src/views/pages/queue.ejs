@@ -1,0 +1,5 @@
+<!doctype html><html lang="<%= locale %>"><%- include('../partials/head') %><body><%- include('../partials/header') %>
+<main class="container"><section class="card"><h1><%= t('queue.title') %></h1>
+<% if (!currentUser) { %><p class="warn"><%= t('queue.guestBlock') %></p><a class="btn" href="/login?lang=<%= locale %>"><%= t('cta.loginToPlay') %></a>
+<% } else { %><div class="actions"><button id="joinQueueBtn" class="btn"><%= t('queue.join') %></button><button id="leaveQueueBtn" class="btn ghost"><%= t('queue.leave') %></button></div><p id="queueStatus" class="muted"><%= t('common.loading') %></p><% } %>
+</section></main><%- include('../partials/footer') %><%- include('../partials/scripts') %></body></html>

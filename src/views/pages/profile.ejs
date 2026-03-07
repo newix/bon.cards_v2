@@ -1,0 +1,6 @@
+<!doctype html><html lang="<%= locale %>"><%- include('../partials/head') %><body><%- include('../partials/header') %>
+<main class="container stack-lg"><section class="card"><h1><%= t('profile.title') %></h1>
+<p><strong><%= t('profile.playerId') %>:</strong> <%= user.playerId %></p>
+<p><strong><%= t('profile.lobbyLink') %>:</strong> <a href="/lobby/<%= user.id %>?lang=<%= locale %>">/lobby/<%= user.id %></a></p>
+<div class="stats-grid"><article class="card stat"><span>Games</span><strong><%= user.stats.gamesPlayed %></strong></article><article class="card stat"><span>Wins</span><strong><%= user.stats.gamesWon %></strong></article><article class="card stat"><span>Rounds</span><strong><%= user.stats.roundsWon %></strong></article></div>
+</section></main><%- include('../partials/footer') %><%- include('../partials/scripts') %></body></html>

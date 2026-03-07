@@ -1,0 +1,3 @@
+const post = async (url, body) => fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify(body) }).then((r) => r.json());
+document.getElementById('login')?.addEventListener('submit', async (e) => { e.preventDefault(); const f = new FormData(e.target); await post('/api/auth/login', Object.fromEntries(f)); location.href='/'; });
+document.getElementById('register')?.addEventListener('submit', async (e) => { e.preventDefault(); const f = new FormData(e.target); await post('/api/auth/register', Object.fromEntries(f)); location.href='/'; });

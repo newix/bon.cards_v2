@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/?lang=<%= locale %>"><%= t('app.name') %></a>
+    <button class="burger" id="burgerBtn" aria-label="menu">☰</button>
+    <nav id="mainNav" class="nav-links">
+      <a href="/?lang=<%= locale %>"><%= t('nav.home') %></a>
+      <a href="/news?lang=<%= locale %>"><%= t('nav.news') %></a>
+      <a href="/faq?lang=<%= locale %>"><%= t('nav.faq') %></a>
+      <% if (currentUser) { %>
+        <a href="/profile?lang=<%= locale %>"><%= t('nav.profile') %></a>
+        <button id="logoutBtn" class="btn ghost"><%= t('nav.logout') %></button>
+      <% } else { %>
+        <a href="/login?lang=<%= locale %>"><%= t('nav.login') %></a>
+        <a href="/register?lang=<%= locale %>"><%= t('nav.register') %></a>
+      <% } %>
+      <a href="?lang=ru">RU</a>
+      <a href="?lang=en">EN</a>
+    </nav>
+  </div>
+</header>

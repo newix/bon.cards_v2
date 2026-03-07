@@ -1,0 +1,12 @@
+{
+  "id": "n-ru-1",
+  "slug": "snarkcards-mvp-launch",
+  "title": "Запуск SnarkCards MVP",
+  "excerpt": "Мы запустили первую версию игры.",
+  "content": "Доступны очередь, friend-lobby, чат и мультиязычность.",
+  "language": "ru",
+  "publishedAt": "2026-03-01T10:00:00.000Z",
+  "isPublished": true,
+  "tags": ["release", "mvp"],
+  "coverImage": "/public/img/news1.jpg"
+}

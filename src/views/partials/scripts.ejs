@@ -1,0 +1,4 @@
+<script>window.__APP__={locale:'<%= locale %>',isAuth:<%- JSON.stringify(Boolean(currentUser)) %>,user:<%- JSON.stringify(currentUser ? {id: currentUser.id, username: currentUser.username, playerId: currentUser.playerId} : null) %>}</script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts/app.js"></script>
+<% if (pageScript) { %><script src="/scripts/<%= pageScript %>"></script><% } %>

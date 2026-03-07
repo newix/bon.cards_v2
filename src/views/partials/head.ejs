@@ -1,0 +1,10 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= pageTitle || 'SnarkCards' %></title>
+  <link rel="icon" href="/images/placeholders/favicon.png" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <% (pageStyles || []).forEach(function(style) { %>
+    <link rel="stylesheet" href="/styles/<%= style %>" />
+  <% }) %>
+</head>
