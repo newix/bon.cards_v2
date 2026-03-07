@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import rateLimit from 'express-rate-limit';
 import { repositories, matchmaking, lobbyService, gameEngine, activeMatches, statsService } from '../content/context';
 import { requireAuth } from '../middleware/auth';

@@ -16,7 +16,7 @@ npm start
 - Socket.IO
 - express-session (cookie httpOnly)
 - zod validation
-- bcrypt password hashing
+- bcryptjs password hashing
 - JSON repositories (`data/users.json`, `data/decks/*.json`, `data/news/*/*.json`)
 
 ## Ключевые возможности
